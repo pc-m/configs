@@ -5,5 +5,5 @@ export DEBEMAIL=$EMAIL
 export GPGKEY=2697CC75
 export GPG_TTY=`tty`
 export GOPATH=$HOME/dev/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 export SSH_ASKPASS=/usr/bin/ssh-askpass
