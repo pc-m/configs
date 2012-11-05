@@ -6,3 +6,4 @@ export GPGKEY=2697CC75
 export GPG_TTY=`tty`
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
+export SSH_ASKPASS=/usr/bin/ssh-askpass

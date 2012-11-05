@@ -8,4 +8,4 @@ xscreensaver -no-splash &
 # Swap caplock and enable accents
 setxkbmap -variant altgr-intl -option ctrl:swapcaps
 
-exec awesome
+exec ssh-agent -- awesome
