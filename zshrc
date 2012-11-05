@@ -13,8 +13,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-#source ~/.zsh/git-prompt/zshrc.sh
-#PROMPT='%B%~%b$(git_super_status) %# '
+source ~/.zsh/git-prompt/zshrc.sh
+PROMPT='%B%~%b$(git_super_status) %# '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
