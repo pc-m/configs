@@ -6,12 +6,11 @@ if [ $SCREEN_COUNT -eq 2 ]; then
     xrandr --output VGA-0 --left-of HDMI-0
 fi
 
-xscreensaver -no-splash &
-
-# Start dropbox
-~/.dropbox-dist/dropboxd &
-
 # Swap caplock and enable accents
 setxkbmap -variant altgr-intl -option ctrl:swapcaps
+
+xscreensaver -no-splash &
+pidgin &
+~/.dropbox-dist/dropboxd &
 
 exec ssh-agent -- awesome
