@@ -3,7 +3,7 @@
 # Show two screens if possible
 SCREEN_COUNT=$(xrandr | grep -v disconnected | grep connected | wc -l)
 if [ $SCREEN_COUNT -eq 2 ]; then
-    xrandr --output VGA-0 --left-of HDMI-0
+    xrandr --output VGA-0 --right-of HDMI-0
 fi
 
 # Swap caplock and enable accents
