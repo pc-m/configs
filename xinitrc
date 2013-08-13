@@ -7,7 +7,7 @@ if [ $SCREEN_COUNT -eq 2 ]; then
 fi
 
 # Swap caplock and enable accents
-setxkbmap -variant altgr-intl -option ctrl:swapcaps
+setxkbmap -variant altgr-intl #-option ctrl:swapcaps
 
 xscreensaver -no-splash &
 pidgin &
