@@ -11,6 +11,11 @@ zstyle :compinstall filename '/home/pascal/.zshrc'
 
 autoload -Uz compinit
 compinit
+
+# Bash word matching
+autoload -U select-word-style
+select-word-style bash
+
 # End of lines added by compinstall
 
 source ~/.zsh/git-prompt/zshrc.sh
