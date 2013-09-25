@@ -366,6 +366,11 @@ awful.rules.rules = {
     -- GitK should always be floating and focused
     { rule = { class = "Gitk" },
       properties = {floating = true} },
+    -- Galculator should always be floating and focused
+    { rule = { class = "Galculator" },
+      properties = {floating = true} },
+    { rule = { name = "Buddy List" },
+      properties = {floating = true} },
 }
 -- }}}
 
@@ -400,6 +405,5 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 awful.util.spawn("ssh-add")
-awful.util.spawn("hamster-time-tracker")
 
 -- }}}

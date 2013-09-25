@@ -9,8 +9,8 @@ fi
 # Swap caplock and enable accents
 setxkbmap -variant altgr-intl #-option ctrl:swapcaps
 
-xscreensaver -no-splash &
 pidgin &
 ~/.dropbox-dist/dropboxd &
+hamster-time-tracker &
 
 exec ssh-agent -- awesome
