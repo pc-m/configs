@@ -33,4 +33,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Enable virtualenvwrapper
+if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
+   source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+
 alias emacs='TERM=xterm-256color emacs'
