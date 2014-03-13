@@ -40,3 +40,5 @@ fi
 
 
 alias emacs='TERM=xterm-256color emacs'
+alias vi='emacsclient -c -nw'
+
