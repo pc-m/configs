@@ -1,0 +1,5 @@
+--color
+--color-filename=blue
+--color-lineno=cyan
+--color-match=red
+--pager=less -r
