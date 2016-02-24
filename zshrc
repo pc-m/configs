@@ -41,3 +41,5 @@ fi
 
 alias vi='emacsclient -c -nw'
 
+alias dcl='docker ps -aq | xargs docker rm'
+alias dco='docker-compose'
