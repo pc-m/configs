@@ -39,6 +39,5 @@ if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
 fi
 
 
-alias emacs='TERM=xterm-256color emacs'
 alias vi='emacsclient -c -nw'
 
