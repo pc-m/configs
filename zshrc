@@ -38,9 +38,29 @@ if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
    source /usr/local/bin/virtualenvwrapper.sh
 fi
 
+function win() {
+        cd $1
+        shift
+        last_pane=$(tmux display -p '#S:#I.#P')
+        for arg in $@ ; do
+                last_pane=$(tmux split-window -dPt $last_pane)
+                tmux send -t "$last_pane" cd SPACE $arg ENTER
+                tmux select-layout tiled
+        done
+}
 
 alias vi='emacsclient -c -nw'
 
+function dockerfail() {
+        pattern=$1
+        if [ -z "$pattern" ] ; then
+                echo "Usage: dockerfail <pattern>"
+                return 1
+        fi
+        docker ps -a | head | grep Exited | grep $pattern | head -n 1 | awk '{print $1}' | xargs docker logs
+}
+
 alias dcl='docker ps -aq | xargs docker rm'
 alias dco='docker-compose'
+alias dsa='docker ps -q | xargs docker stop'
 alias xm='make -f ~/dev/xm/Makefile'
