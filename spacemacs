@@ -36,25 +36,26 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     html
-     php
-     yaml
-     markdown
-     python
+     csv
+     emacs-lisp
      git
      go
      helm
+     html
+     javascript
+     markdown
+     php
+     python
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t)
-     ;; better-defaults
-     emacs-lisp
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
+     org
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     spell-checking
      syntax-checking
-     ;; version-control
+     version-control
+     yaml
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
