@@ -42,6 +42,7 @@ values."
      markdown
      python
      git
+     go
      helm
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t)
