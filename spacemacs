@@ -311,6 +311,7 @@ you should place your code here."
   (put 'flycheck-python-flake8-executable
        'safe-local-variable
        'stringp)
+  (define-coding-system-alias 'UTF-8 'utf-8)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
