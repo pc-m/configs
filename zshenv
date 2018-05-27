@@ -7,8 +7,8 @@ export GPG_TTY=`tty`
 export GOPATH=$HOME/d/go
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin:/home/pcm/bin
 export SSH_ASKPASS=/usr/bin/ssh-askpass
-export CDPATH=:$HOME/dev/xivo
+export CDPATH=:$HOME/dev/wazo
 
-# XiVO stuff
-export XIVO_PATH=/home/pcm/dev/xivo
+# Wazo stuff
+export XIVO_PATH=/home/pcm/dev/wazo
 export XIVO_HOSTNAME=pcm-dev-0
