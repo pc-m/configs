@@ -18,7 +18,7 @@ select-word-style bash
 
 # End of lines added by compinstall
 
-source ~/.zsh/git-prompt/zshrc.sh
+source ~/dev/zsh-git-prompt/zshrc.sh
 PROMPT='%B%~%b$(git_super_status) %# '
 
 # enable color support of ls and also add handy aliases
